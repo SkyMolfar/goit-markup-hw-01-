@@ -4,7 +4,8 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
-    color:#000000
+    color:#000000;
+    text-decoration: none;
     
 }
 .accent{
@@ -23,6 +24,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    text-decoration: none;
     
 }
 .nav{
@@ -31,8 +33,15 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: #212121;    
+    color: #212121;
+    text-decoration: none;    
 }
+
+.nav:hover,
+.nav:focus{
+    color: #2196F3;
+}
+
 .link-mail{
     font-family: 'Roboto';
     font-style: normal;
@@ -40,14 +49,21 @@
     font-size: 14px;
     line-height: 16px;
     color: #2196F3;
+    text-decoration: none;
 }
-.number{
+.link-number{
     font-family: 'Roboto'; 
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     color: #757575;
+    text-decoration: none;
+}
+
+.link-number:hover,
+.link-number:focus{
+    color: #2196F3;
 }
 
 .hero-title{
@@ -58,9 +74,10 @@
     line-height: 60px;
     text-align: center;
     text-transform: uppercase;
+    color: #FFFFFF;
 }
 
-.link{
+.button-link{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -70,10 +87,17 @@
     align-items: center;
     text-align: center;
     color: #FFFFFF;
-    background-color: #2196F3;;
+    background-color: #2196F3;
+
+}
+.button-link:hover,
+.button-link:focus{
+    color: red;
+    background-color: #FFFFFF;
+
 }
 
-.title{
+.section-title{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -93,7 +117,7 @@
     color: #212121;
 }
 
-.paragraf-section{
+.section-text{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -109,6 +133,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    text-align: center;
     color: #212121;
     
 }
@@ -118,7 +143,8 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;    
+    line-height: 19px;
+    text-align: center;    
     color: #757575;
 }
 .address{
@@ -128,14 +154,16 @@
     font-size: 14px;
     line-height: 24px;    
     color: #FFFFFF;
+    text-decoration: none;
+}
+
+.address:hover,
+.address:focus{
+    color: #2196F3;
 }
 
 .background{
     background: #2F303A;
-}
-
-.title-hidden{
-
 }
 
 .project{
@@ -145,6 +173,7 @@
     font-size: 16px;
     line-height: 26px;   
     color: #212121;
+    list-style: none;
 }
 
 .titel-project{
@@ -164,3 +193,20 @@
     line-height: 30px;
     color: #757575;
 }
+
+.visually-hidden {
+    position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+    }
+
+    .list{
+        list-style: none;
+    }
